@@ -1,0 +1,634 @@
+# Résumé
+
+Dans le contexte actuel du marketing piloté par les données, deux concepts clés émergent comme piliers fondamentaux pour les organisations souhaitant optimiser leurs stratégies : **l’appropriation des données (data ownership)** et les **capacités en données (data capabilities)**. Ces piliers sont reliés, mais assez indépendants. 
+
+**L’appropriation des données** fait référence à la manière dont une organisation gouverne, interprète et utilise ses données pour orienter la prise de décision. Elle évolue à travers des niveaux de maturité, allant de l'**instinct** (décisions basées sur l'intuition) à l'**expérimentation** (utilisation systématique de tests pour optimiser les stratégies). 
+
+Les **capacités en données** concernent l'infrastructure technologique et les compétences techniques permettant de collecter, intégrer, analyser et activer les données. Elles progressent de la **fragmentation** (données dispersées et non intégrées) à l'**activation** (données connectées aux plateformes pour une personnalisation en temps réel).
+
+En comprenant comment chaque action influence les niveaux de maturité correspondants, votre organisation peut planifier une progression cohérente et stratégique sur les deux axes. Cela permettra non seulement d'améliorer les infrastructures et les outils, mais aussi de transformer la culture interne pour tirer pleinement parti du potentiel des données.
+
+---
+
+### **1. Pourquoi cet atelier est important**
+
+- Le but est de comprendre les **obstacles fréquents** à la construction d'équipes de marketing piloté par les données.
+- Click & Mortar a développé un modèle, après avoir combiné la science des données avec le marketing, pour aider les organisations à comprendre ce qu'elles doivent faire pour accomplir cette vision de marketing piloté par les données.
+
+### **2. Définition du Marketing piloté par les données**
+
+- « Utiliser l’analyse des données pour guider les décisions et les tests à mener, menant finalement à une personnalisation parfaite pour le client. »
+- Deux éléments sont cruciaux pour réussir dans ce domaine : la **propriété des données** et les **capacités en données**.
+
+### 3. L**’appropriation des données (Data Ownership) : Niveaux de maturité**
+
+Chaque organisation progresse à travers différents niveaux de maturité concernant l’appropriation des données :
+
+- **Instinct** :
+    - Les décisions sont basées sur l'intuition (le principe du **HIPPO** prévaut – Highest Paid Person’s Opinion).
+    - Les données sont utilisées de manière sporadique pour confirmer des biais existants.
+- **Cadre (Frame)** :
+    - Les équipes connaissent leurs principaux KPI. Ces KPIs sont alignés avec les objectifs d’affaires de l’entreprise et découlent de la compréhension des objectifs de leur présence numérique.
+    - Le rythme d’analyse rétrospective est établi à travers des rapports réguliers, mais aucune structure décisionnelle n’en découle.
+    - L’imputabilité derrière les actions qui devraient découler de l’analyse des données n’est pas claire et, bien souvent, ces analyses ne servent pas à motiver des décisions d’affaires.
+- **Interprétation (Interpret)** :
+    - Les équipes découvrent le « pourquoi » derrière les données.
+    - Les insights sont utilisés pour ajuster les budgets et stratégies.
+    - Une structure de présentation des résultats basés sur le principe d’insight-actions (QBR) est mise en place et une matrice d’imputabilité est implantée. De cette manière, les actions résultantes des insights dénichés dans la données sont prises en charges par les parties prenantes adéquates.
+- **Expérimentation (Experiment)** :
+    - Les équipes se concentrent sur l'expérimentation.
+    - La cadence des expérimentations est mesurée et suivie.
+    - Une boucle de rétroaction existe entre la haute direction et les équipes d’implantation. Les décisions de la haute direction sont maintenant motivées par la donnée observée et les résultats des expérimentations accomplies par les équipes d’implantation.
+
+### **4. Capacités en données (Data Capabilities) : Niveaux de maturité**
+
+En parallèle, les organisations doivent évaluer leurs **capacités en données**. Les niveaux de maturité incluent :
+
+- **Fragmentation (Fragment)** :
+    - Les données sont présentes mais isolées en silos.
+    - Les protocoles de mesure ne sont pas encore fiables.
+    - Les données à portée similaire mais de format différent sont analysées de manière indépendante.
+- **Harmonie (Harmony)** :
+    - Les données sont agrégées et visualisées.
+    - Les protocoles de mesure sont fiables et respectés à l’échelle de l'organisation.
+    - Les données à portée similaire mais de format différent sont aggrégées et analysées ensemble.
+- **Prédiction (Prediction)** :
+    - Les données sont centralisées autour d'un **ID client**.
+    - Cet ID client est utilisé comme clé unique dans une infrastructure analogue à une plateforme de données client (CDP).
+    - Des modèles statistiques sont utilisés pour prédire les comportements (attribution, churn, segmentation).
+- **Automatisation (Automation)** :
+    - Les données sont connectées aux plateformes, des entrées aux sorties.
+    - Les modèles prédictifs alimentent automatiquement la personnalisation des sites web, emails et publicités.
+
+### **5. Études de cas**
+
+- **Amazon** :
+    - Amazon est utilisé pour illustrer un exemple de progression à travers tous les niveaux de maturité, avec une **activation et l’experimentation dans son ADN.**
+    
+    ![Capture d’écran, le 2024-09-25 à 15.04.36.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/59e64fe3-439f-4e95-9058-b0af3b8b6acc/5ac8b256-7363-40d4-907e-93678a7d848f/4d911893-a780-46fa-8484-83733bbb9654.png)
+    
+- **Client retail** :
+    - Ce client était initialement évalué au niveau **Harmonie**, avec des activations partiellement en cours, mais un **mauvais alignement entre les activations et les KPI** a été identifié.
+    - Le diagnostic a montré que l’appropriation des données était toujours au niveau **Instinct** malgré les activations avancées.
+    - **Solutions** :
+        - Organisation d’**ateliers KPI** pour clarifier les indicateurs de performance.
+        - Mise en place d’un **cadre analytique** pour structurer les décisions.
+        - Progression du niveau de maturité de **Instinct** à **Cadre**, puis vers **Interprétation** et **Expérimentation**.
+
+## 6. Certaines heuristiques donnant un ordonnancement dans les recommandations.
+
+Voici quelques règles à suivre pour appliquer le modèle marketing data-driven de C&M convenablement. 
+
+- Il est possible d’obtenir un niveau 0 pour chacun des axes. Par exemple, si les données sont inexistantes (aucun tracking de site web, aucun CRM, etc.), nous ne sommes même pas au stade *Instinct* pour l’appropriation ni au stade *Fragment* pour les capacités. Le questionnaire devra évaluer si l’entreprise se situe à un niveau 1, 2, 3 ou 4 selon les deux axes. Si l’entreprise n’atteint pas les requis pour le niveau 1, elle est alors au niveau 0 et on doit recommander l’intégration de données dans les pratiques.
+- Si une entreprise est au niveau 0 dans l’un des deux axes, la recommendation est de passer au moins niveau 1 dans chaque axe avant d’améliorer son niveau dans l’un ou l’autre. Par exemple, si une compagnie est au niveau 0 au niveau de l’appropriation et de 3 au niveau des capacités (cas très rare, mais possible), on devrait recommander de passer niveau 1 pour l’appropriation avant toutes choses.
+- En règle générale, il est recommandé d’avoir un niveau supérieur pour l’appropriation vs son niveau de capacités. Il est toutefois possible d’améliorer les deux axes en parallèle, puisque ce sont souvent des initiatives indépendantes. Par exemple, si une compagnie est niveau 2 pour l’appropriation et niveau 3 pour les capacités, on devrait recommender une progression de l’appropriation. Si c’est l’inverse (niveau 3 pour appropriation et niveau 2 pour capacités) alors il autant correct de recommander une progression 3 —> 4 pour l’appropriation qu’une progression 2 —> 3 pour les capacités : tout cela dépend des ressources et du cas de l’entreprise. Cette question d’ordonnancement pourrait être inclue dans le questionnaire.
+- En règle générale, on doit au minimum atteindre un niveau 2 (Harmony) dans le Data Capability avant de passer à un niveau supérieur à 3 (Interpret) en Data Ownership.
+- En règle générale, on doit atteindre au minimum un niveau 2 (Frame) en Data Ownership avant de passer à un niveau supérieur à 2 (Harmony) en Data Capabilities.
+- En règle générale, on doit atteindre un niveau 4 (Experiment) en Data Ownership avant de progresser à un niveau 4 (Automation) en Data Capabilities. Il est possible de mettre les bases techniques pour l’Automation, mais avant de l’activer, assurez-vous d’avoir atteint votre niveau d’Experiment.
+
+## **7. Comment chaque recommandation affecte la progression entre Data Ownership et Data Capabilities**
+
+Les cas de figure suivants explicitent certaines actions qui peuvent être accomplies au sein d’une entreprise et de constater les impacts de ces dernières sur la progression selon ses deux axes de data-driven levels. 
+
+### **1. Aligner la Culture d'Entreprise sur les Données**
+
+Prenons une entreprise aux niveaux “Instinct” (appropriation) et “Fragment”  (capacités). 
+
+- **Description de la recommandation** :
+    - Sensibiliser et former les dirigeants et les équipes à l'importance des données dans la prise de décision et procéder à un atelier de KPIs.
+- **Impact sur Data Ownership** :
+    - **Progression de "Instinct" à "Frame"** :
+        - En adoptant une culture axée sur les données, les décisions ne sont plus basées uniquement sur l'intuition (**Instinct**), mais s'appuient sur des **KPI** définis et suivis régulièrement (**Frame**).
+        - Les équipes commencent à établir des rapports réguliers et à mesurer leurs performances par rapport à des objectifs clairs.
+- **Impact sur Data Capabilities** :
+    - **Maintien au Niveau "Fragment"** :
+        - Bien que la culture évolue, les données restent fragmentées dans différents silos.
+        - L'accent est mis sur l'utilisation des données existantes, même si elles sont dispersées.
+
+---
+
+### **2. Centraliser et Intégrer les Données**
+
+Prenons une entreprise aux niveaux “Fragment” (capacités) et “Frame” (appropriation).  
+
+- **Description de la recommandation** :
+    - Investir dans une infrastructure telle qu'un data warehouse ou un data lake pour regrouper les données.
+- **Impact sur Data Capabilities** :
+    - **Progression de "Fragment" à "Harmony"** :
+        - Les données, auparavant dispersées (**Fragment**), sont désormais agrégées et visualisées de manière cohérente (**Harmony**).
+        - Les protocoles de mesure deviennent plus fiables et standardisés à l'échelle de l'organisation.
+- **Impact sur Data Ownership** :
+    - **Facilite la Progression de "Frame" à "Interpret"** :
+        - Avec des données centralisées et accessibles, les équipes peuvent approfondir leur compréhension et passer de la simple mesure des KPI (**Frame**) à l'interprétation des données pour comprendre le **"pourquoi"** derrière les performances (**Interpret**).
+
+---
+
+### **3. Standardiser les Protocoles de Mesure**
+
+Prenons une compagnie aux niveaux “Harmony” (capacités) et “Interpret” (appropriation). 
+
+- **Description de la recommandation** :
+    - Définir des standards et des processus pour la collecte et la gestion des données à travers l'organisation.
+- **Impact sur Data Capabilities** :
+    - **Consolide le Niveau "Harmony"** :
+        - Renforce la fiabilité et la cohérence des données agrégées.
+        - Prépare le terrain pour une évolution vers le niveau **"Prediction"** en assurant que les données sont de haute qualité.
+- **Impact sur Data Ownership** :
+    - **Soutient le Niveau "Interpret"** :
+        - Des données fiables permettent une meilleure interprétation et des insights plus précis.
+        - Les équipes gagnent en confiance pour baser leurs décisions sur les données.
+
+---
+
+### **4. Développer les Compétences en Analyse de Données**
+
+Prenons une entreprise aux niveaux Interpret (appropriation) et Harmony (capacités). 
+
+- **Description de la recommandation** :
+    - Former les équipes aux outils d'analyse, de visualisation et aux méthodes statistiques.
+- **Impact sur Data Ownership** :
+    - **Progression de "Interpret" à "Experiment"** :
+        - Les équipes, désormais compétentes en analyse, peuvent concevoir et mener des **expérimentations** pour tester différentes hypothèses et stratégies.
+        - L'organisation passe d'une compréhension passive des données à une utilisation active pour l'innovation.
+- **Impact sur Data Capabilities** :
+    - **Prépare le Passage à "Prediction"** :
+        - Les compétences accrues permettent d'exploiter des modèles statistiques et prédictifs, ouvrant la voie vers le niveau **"Prediction"**.
+
+---
+
+### **5. Mettre en Œuvre des Modèles Prédictifs**
+
+Prenons une entreprise aux niveaux “Harmony” (capacités) et “Experiment” (appropriation). 
+
+- **Description de la recommandation** :
+    - Utiliser le machine learning et l'intelligence artificielle pour anticiper les comportements clients.
+- **Impact sur Data Capabilities** :
+    - **Progression de "Harmony" à "Prediction"** :
+        - L'organisation évolue de l'agrégation de données (**Harmony**) à l'utilisation de modèles prédictifs pour anticiper les comportements (**Prediction**).
+        - Nécessite une centralisation des données autour d'un **ID client** pour une vision unifiée.
+- **Impact sur Data Ownership** :
+    - **Renforce le Niveau "Experiment"** :
+        - Les insights prédictifs fournissent des hypothèses sur les expérimentations.
+        - Les décisions sont désormais informées par des prévisions, ce qui améliore l'efficacité des tests et des stratégies.
+
+---
+
+### **6. Automatiser l'Activation des Données**
+
+Prenons une entreprise aux niveaux “Prediction” (capacités) et “Experiment” (appropriation). 
+
+- **Description de la recommandation** :
+    - Connecter les données aux plateformes marketing pour automatiser la personnalisation (emails, publicités, site web).
+- **Impact sur Data Capabilities** :
+    - **Progression de "Prediction" à "Automation"** :
+        - Les modèles prédictifs sont activement utilisés pour personnaliser les interactions en temps réel (**Automation**).
+        - Création d'une boucle fermée où les données alimentent l'action, et les résultats sont réintégrés pour affiner les modèles.
+- **Impact sur Data Ownership** :
+    - **Optimise le Niveau "Experiment"** :
+        - Les expérimentations deviennent plus sophistiquées grâce à l'automatisation.
+        - Les équipes peuvent tester rapidement différentes approches et personnaliser à grande échelle.
+
+---
+
+### **7. Instaurer une Gouvernance des Données**
+
+Prenons une compagnie pouvant être aux niveaux “Harmony”, “Prediction” ou “Automation” au niveau de son data capability. 
+
+- **Description de la recommandation** :
+    - Établir des politiques de gestion des données, incluant la sécurité, la conformité et la qualité.
+- **Impact sur Data Capabilities** :
+    - **Consolide les Niveaux "Harmony", "Prediction" et "Automation"** :
+        - Assure que les données sont fiables et conformes aux règlementations.
+        - Maintient l'intégrité des modèles prédictifs et des activations automatisées.
+- **Impact sur Data Ownership** :
+    - **Soutient le Niveau "Experiment"** :
+        - La gouvernance garantit que les expérimentations sont basées sur des données de qualité.
+        - Renforce la confiance des équipes dans les données utilisées pour la prise de décision.
+
+---
+
+### **8. Favoriser l'Expérimentation Continue**
+
+Prenons une compagnie aux niveaux “Experiment” (appropriation) et “Automation” (capacités). 
+
+- **Description de la recommandation** :
+    - Créer un cadre pour tester et mesurer régulièrement de nouvelles stratégies ou tactiques en désignant des personnes imputables et une boucle de rétroaction solide entre la haute direction et les résultats des expérimentations.
+- **Impact sur Data Ownership** :
+    - **Consolide et Optimise le Niveau "Experiment"** :
+        - L'expérimentation devient systématique, avec des processus établis pour mesurer et apprendre de chaque test.
+        - Encourage une culture d'amélioration continue basée sur les données.
+- **Impact sur Data Capabilities** :
+    - **Améliore le Niveau "Automation"** :
+        - Les résultats des expérimentations alimentent les modèles prédictifs et les actions automatisées.
+        - Permet une adaptation rapide aux changements du marché ou du comportement des clients.
+
+---
+
+### 8. Conclusion
+
+En alignant correctement les niveaux de maturité avec les bonnes variables, on voit clairement comment chaque action spécifique peut faire progresser une organisation :
+
+- **Data Ownership** (Instinct → Frame → Interpret → Experiment) :
+    - Il s'agit de la culture, des processus décisionnels et de l'utilisation des données pour guider les actions.
+    - Les suggestions visent à faire évoluer les équipes vers une utilisation proactive et expérimentale des données.
+- **Data Capabilities** (Fragment → Harmony → Prediction → Automation) :
+    - Il s'agit des infrastructures, des outils et des technologies permettant de gérer et d'exploiter les données.
+    - Les suggestions améliorent la qualité, l'intégration et l'utilisation avancée des données pour des actions automatisées.
+
+En comprenant comment chaque action influence les niveaux de maturité correspondants, votre organisation peut planifier une progression cohérente et stratégique sur les deux axes. Cela permettra non seulement d'améliorer les infrastructures et les outils, mais aussi de transformer la culture interne pour tirer pleinement parti du potentiel des données.
+
+<aside>
+🚨
+
+Ce modèle aide les entreprises à identifier leur position actuelle dans leur progression vers le **marketing piloté par les données** et à élaborer un plan d'action pour améliorer leur maturité. Il permet aux organisations de construire progressivement une approche plus structurée et analytique, en passant de décisions intuitives à des stratégies guidées par des insights clairs et mesurables.
+
+# Questionnaire du Lead Magnet - Assess your marketing data levels of maturity
+
+Ce questionnaire vous aidera à déterminer le niveau de maturité de votre organisation en matière de **propriété des données** (**Data Ownership**) et de **capacités en données** (**Data Capabilities**). Répondez honnêtement aux questions pour identifier où se situe votre entreprise sur ces deux axes.
+
+---
+
+[English Version - Questionnaire](https://www.notion.so/English-Version-Questionnaire-10cba94c10268022a1e8d45a3a6f0381?pvs=21)
+
+## **Section 1 : Data Ownership**
+
+### **1. Comment les décisions marketing sont-elles principalement prises dans votre organisation ?**
+
+a) Basées sur l'intuition des dirigeants, avec peu ou pas d'utilisation des données.
+
+b) Basées sur des KPI définis, avec des rapports réguliers pour suivre les performances.
+
+c) Basées sur l'analyse des données pour comprendre les raisons des performances et ajuster les stratégies.
+
+d) Basées sur des expérimentations régulières et des tests A/B pour optimiser continuellement les stratégies.
+
+### **2. Quelle est l'attitude générale de votre équipe vis-à-vis des données ?**
+
+a) Les données sont utilisées sporadiquement pour confirmer des décisions déjà prises.
+
+b) Les données sont suivies régulièrement, mais sans analyse approfondie.
+
+c) Les données sont analysées pour découvrir les insights et orienter les décisions stratégiques.
+
+d) Les données sont au cœur de tests et d'expérimentations pour innover et améliorer les performances.
+
+### **3. Comment décririez-vous l'utilisation des KPI dans votre organisation ?**
+
+a) Les KPI ne sont pas clairement définis ou communiqués à l'équipe.
+
+b) Les KPI principaux sont définis et suivis, mais limités aux métriques de base.
+
+c) Une variété de KPI est utilisée pour analyser en profondeur les performances.
+
+d) Les KPI sont continuellement revus et adaptés en fonction des résultats des expérimentations.
+
+### **4. Quelle est la fréquence d'analyse des données dans votre organisation ?**
+
+a) Occasionnelle, principalement lors de réunions stratégiques majeures.
+
+b) Régulière, avec des rapports mensuels ou trimestriels.
+
+c) Fréquente, avec des analyses hebdomadaires pour ajuster les stratégies.
+
+d) Très fréquente, avec un suivi quotidien et des ajustements en temps réel basés sur les tests.
+
+### **5. Comment votre organisation aborde-t-elle l'expérimentation ?**
+
+a) L'expérimentation n'est pas une pratique courante.
+
+b) Des tests occasionnels sont effectués, mais sans cadre structuré.
+
+c) L'expérimentation est encouragée, avec des processus pour mesurer les résultats.
+
+d) L'expérimentation est intégrée dans la culture, avec une cadence mesurée et des apprentissages systématiques.
+
+---
+
+## **Section 2 : Data Capabilities**
+
+### **6. Comment les données sont-elles structurées et accessibles dans votre organisation ?**
+
+a) Les données sont dispersées dans différentes plateformes sans intégration.
+
+b) Les données sont en silos, avec des protocoles de mesure non standardisés.
+
+c) Les données sont centralisées et accessibles via des tableaux de bord partagés.
+
+d) Les données sont centralisées autour d'un ID client unique.
+
+e) Les données sont intégrées et connectées aux plateformes marketing pour une activation en temps réel.
+
+### **7. Quel est le niveau de fiabilité de vos protocoles de mesure ?**
+
+a) Les protocoles de mesure sont inexistants ou peu fiables.
+
+b) Il existe des protocoles, mais ils ne sont pas respectés de manière cohérente.
+
+c) Les protocoles de mesure sont standardisés et fiables à l'échelle de l'organisation.
+
+d) Les protocoles sont avancés, permettant une collecte de données précise pour des modèles prédictifs.
+
+e) Les protocoles permettent une activation automatisée des données dans les plateformes marketing.
+
+### **8. Comment utilisez-vous les données pour prévoir les comportements clients ?**
+
+a) Nous ne prévoyons pas les comportements clients à partir des données.
+
+b) Nous utilisons des analyses rétrospectives sans prédiction future.
+
+c) Nous identifions des tendances pour anticiper les besoins généraux du marché.
+
+d) Nous utilisons des modèles statistiques pour prédire les comportements spécifiques (churn, segmentation).
+
+e) Les prédictions alimentent automatiquement les actions marketing personnalisées.
+
+### **9. Quel est le degré d'automatisation dans l'activation de vos données ?**
+
+a) Il n'y a pas d'automatisation ; les actions sont manuelles et non intégrées.
+
+b) Faible automatisation, avec quelques processus automatisés isolés.
+
+c) Automatisation modérée, les données sont utilisées pour déclencher certaines actions marketing.
+
+d) Haute automatisation, avec des modèles prédictifs informant les stratégies.
+
+e) Automatisation complète, les données alimentent en temps réel la personnalisation sur tous les canaux.
+
+### **10. Comment gérez-vous l'identification client dans vos systèmes de données ?**
+
+a) Il n'y a pas d'identification unique des clients dans nos systèmes.
+
+b) Les clients sont identifiés différemment selon les plateformes, sans unification.
+
+c) Un identifiant client est utilisé dans certaines plateformes, mais pas de manière globale.
+
+d) Un ID client unique est utilisé pour centraliser toutes les données clients.
+
+e) L'ID client unique est utilisé pour personnaliser et activer les communications sur tous les points de contact.
+
+---
+
+# **Solutionnaire du Lead Magnet - Assess your marketing data levels of maturity**
+
+[English Version - Solutionnaire](https://www.notion.so/English-Version-Solutionnaire-10cba94c1026806683a5f58c67338bcb?pvs=21)
+
+## **Section 1 : Data Ownership**
+
+### **1. Comment les décisions marketing sont-elles principalement prises dans votre organisation ?**
+
+a) **Basées sur l'intuition des dirigeants, avec peu ou pas d'utilisation des données.**
+
+*Niveau : Instinct*
+
+b) **Basées sur des KPI définis, avec des rapports réguliers pour suivre les performances.**
+
+*Niveau : Cadre (Frame)*
+
+c) **Basées sur l'analyse des données pour comprendre les raisons des performances et ajuster les stratégies.**
+
+*Niveau : Interprétation (Interpret)*
+
+d) **Basées sur des expérimentations régulières et des tests A/B pour optimiser continuellement les stratégies.**
+
+*Niveau : Expérimentation (Experiment)*
+
+---
+
+### **2. Quelle est l'attitude générale de votre équipe vis-à-vis des données ?**
+
+a) **Les données sont utilisées sporadiquement pour confirmer des décisions déjà prises.**
+
+*Niveau : Instinct*
+
+b) **Les données sont suivies régulièrement, mais sans analyse approfondie.**
+
+*Niveau : Cadre (Frame)*
+
+c) **Les données sont analysées pour découvrir les insights et orienter les décisions stratégiques.**
+
+*Niveau : Interprétation (Interpret)*
+
+d) **Les données sont au cœur de tests et d'expérimentations pour innover et améliorer les performances.**
+
+*Niveau : Expérimentation (Experiment)*
+
+---
+
+### **3. Comment décririez-vous l'utilisation des KPI dans votre organisation ?**
+
+a) **Les KPI ne sont pas clairement définis ou communiqués à l'équipe.**
+
+*Niveau : Instinct*
+
+b) **Les KPI principaux sont définis et suivis, mais limités aux métriques de base.**
+
+*Niveau : Cadre (Frame)*
+
+c) **Une variété de KPI est utilisée pour analyser en profondeur les performances.**
+
+*Niveau : Interprétation (Interpret)*
+
+d) **Les KPI sont continuellement revus et adaptés en fonction des résultats des expérimentations.**
+
+*Niveau : Expérimentation (Experiment)*
+
+---
+
+### **4. Quelle est la fréquence d'analyse des données dans votre organisation ?**
+
+a) **Occasionnelle, principalement lors de réunions stratégiques majeures.**
+
+*Niveau : Instinct*
+
+b) **Régulière, avec des rapports mensuels ou trimestriels.**
+
+*Niveau : Cadre (Frame)*
+
+c) **Fréquente, avec des analyses hebdomadaires pour ajuster les stratégies.**
+
+*Niveau : Interprétation (Interpret)*
+
+d) **Très fréquente, avec un suivi quotidien et des ajustements en temps réel basés sur les tests.**
+
+*Niveau : Expérimentation (Experiment)*
+
+---
+
+### **5. Comment votre organisation aborde-t-elle l'expérimentation ?**
+
+a) **L'expérimentation n'est pas une pratique courante.**
+
+*Niveau : Instinct*
+
+b) **Des tests occasionnels sont effectués, mais sans cadre structuré.**
+
+*Niveau : Cadre (Frame)*
+
+c) **L'expérimentation est encouragée, avec des processus pour mesurer les résultats.**
+
+*Niveau : Interprétation (Interpret)*
+
+d) **L'expérimentation est intégrée dans la culture, avec une cadence mesurée et des apprentissages systématiques.**
+
+*Niveau : Expérimentation (Experiment)*
+
+---
+
+## **Section 2 : Data Capabilities**
+
+### **6. Comment les données sont-elles structurées et accessibles dans votre organisation ?**
+
+a) **Les données sont dispersées dans différentes plateformes sans intégration.**
+
+*Niveau : Fragmentation (Fragment)*
+
+b) **Les données sont en silos, avec des protocoles de mesure non standardisés.**
+
+*Niveau : Fragmentation (Fragment)*
+
+c) **Les données sont centralisées et accessibles via des tableaux de bord partagés.**
+
+*Niveau : Harmonie (Harmony)*
+
+d) **Les données sont centralisées autour d'un ID client unique.**
+
+*Niveau : Prédiction (Prediction)*
+
+e) **Les données sont intégrées et connectées aux plateformes marketing pour une activation en temps réel.**
+
+*Niveau : Activation (Activation)*
+
+---
+
+### **7. Quel est le niveau de fiabilité de vos protocoles de mesure ?**
+
+a) **Les protocoles de mesure sont inexistants ou peu fiables.**
+
+*Niveau : Fragmentation (Fragment)*
+
+b) **Il existe des protocoles, mais ils ne sont pas respectés de manière cohérente.**
+
+*Niveau : Fragmentation (Fragment)*
+
+c) **Les protocoles de mesure sont standardisés et fiables à l'échelle de l'organisation.**
+
+*Niveau : Harmonie (Harmony)*
+
+d) **Les protocoles sont avancés, permettant une collecte de données précise pour des modèles prédictifs.**
+
+*Niveau : Prédiction (Prediction)*
+
+e) **Les protocoles permettent une activation automatisée des données dans les plateformes marketing.**
+
+*Niveau : Activation (Activation)*
+
+---
+
+### **8. Comment utilisez-vous les données pour prévoir les comportements clients ?**
+
+a) **Nous ne prévoyons pas les comportements clients à partir des données.**
+
+*Niveau : Fragmentation (Fragment)*
+
+b) **Nous utilisons des analyses rétrospectives sans prédiction future.**
+
+*Niveau : Fragmentation (Fragment)*
+
+c) **Nous identifions des tendances pour anticiper les besoins généraux du marché.**
+
+*Niveau : Harmonie (Harmony)*
+
+d) **Nous utilisons des modèles statistiques pour prédire les comportements spécifiques (churn, segmentation).**
+
+*Niveau : Prédiction (Prediction)*
+
+e) **Les prédictions alimentent automatiquement les actions marketing personnalisées.**
+
+*Niveau : Activation (Activation)*
+
+---
+
+### **9. Quel est le degré d'automatisation dans l'activation de vos données ?**
+
+a) **Il n'y a pas d'automatisation ; les actions sont manuelles et non intégrées.**
+
+*Niveau : Fragmentation (Fragment)*
+
+b) **Faible automatisation, avec quelques processus automatisés isolés.**
+
+*Niveau : Fragmentation (Fragment)*
+
+c) **Automatisation modérée, les données sont utilisées pour déclencher certaines actions marketing.**
+
+*Niveau : Harmonie (Harmony)*
+
+d) **Haute automatisation, avec des modèles prédictifs informant les stratégies.**
+
+*Niveau : Prédiction (Prediction)*
+
+e) **Automatisation complète, les données alimentent en temps réel la personnalisation sur tous les canaux.**
+
+*Niveau : Activation (Activation)*
+
+---
+
+### **10. Comment gérez-vous l'identification client dans vos systèmes de données ?**
+
+a) **Il n'y a pas d'identification unique des clients dans nos systèmes.**
+
+*Niveau : Fragmentation (Fragment)*
+
+b) **Les clients sont identifiés différemment selon les plateformes, sans unification.**
+
+*Niveau : Fragmentation (Fragment)*
+
+c) **Un identifiant client est utilisé dans certaines plateformes, mais pas de manière globale.**
+
+*Niveau : Harmonie (Harmony)*
+
+d) **Un ID client unique est utilisé pour centraliser toutes les données clients.**
+
+*Niveau : Prédiction (Prediction)*
+
+e) **L'ID client unique est utilisé pour personnaliser et activer les communications sur tous les points de contact.**
+
+*Niveau : Activation (Activation)*
+
+# **Exemple d'Analyse**
+
+Supposons que vous ayez les réponses suivantes :
+
+- **Section 1** : 1.b, 2.c, 3.c, 4.b, 5.b
+- **Section 2** : 6.c, 7.c, 8.c, 9.c, 10.c
+
+**Data Ownership** :
+
+- Vous avez choisi : b, c, c, b, b
+- **Niveaux correspondants** : Cadre, Interprétation, Interprétation, Cadre, Cadre
+- **Résultat** : Vous êtes principalement au niveau **Cadre (Frame)** avec une tendance vers **Interprétation (Interpret)**.
+
+**Data Capabilities** :
+
+- Vous avez choisi : c, c, c, c, c
+- **Niveaux correspondants** : Harmonie pour toutes les réponses
+- **Résultat** : Votre organisation est au niveau **Harmonie (Harmony)**.
+
+**Interprétation** :
+
+- Votre organisation a défini des KPI et suit régulièrement les performances, mais il y a encore de la place pour approfondir l'analyse des données et intégrer davantage l'expérimentation.
+- Vos capacités en données sont centralisées et standardisées, ce qui est une excellente base pour évoluer vers des modèles prédictifs.
+
+---
+
+## **Prochaines Étapes Recommandées**
+
+- **Pour Data Ownership** :
+    - **Renforcer l'analyse** : Encouragez vos équipes à aller au-delà des KPI de base pour comprendre le "pourquoi" derrière les performances.
+    - **Intégrer l'expérimentation** : Commencez à mettre en place des tests A/B pour optimiser les stratégies.
+- **Pour Data Capabilities** :
+    - **Évoluer vers la Prédiction** : Utilisez vos données centralisées pour développer des modèles prédictifs qui anticipent les comportements clients.
+    - **Former les équipes** : Investissez dans la formation pour que vos équipes soient capables de créer et d'interpréter ces modèles.
+
+---
+
+**Pour une analyse plus détaillée et des recommandations personnalisées**, n'hésitez pas à nous contacter. Nous serions ravis de vous accompagner dans votre progression sur les axes de la Data Ownership et des Data Capabilities.
