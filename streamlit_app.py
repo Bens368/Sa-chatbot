@@ -8,7 +8,7 @@ load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 st.title("Data Maturity Detective")
-st.write("Bienvenue dans le Data Maturity Detective ! Prêt à évaluer la maturité de votre entreprise en matière de gestion des données ? Je vais vous poser une série de questions pour comprendre vos pratiques et capacités. Répondez simplement à chaque question, et à la fin, je vous fournirai un diagnostic détaillé avec des conseils pour améliorer votre maturité data. Pour commencer, tapez 'Prêt' ou posez-moi votre première question.")
+st.write("Welcome to the Data Maturity Detective! Ready to assess your company's maturity in data management? I'm going to ask you a series of questions to understand your practices and capabilities. Simply answer each question, and at the end, I'll provide you with a detailed diagnosis along with advice to improve your data maturity. To begin, type 'Ready' or ask me your first question.")
 
 # Lecture du contenu du fichier texte directement depuis le fichier
 with open('instructions.txt', 'r', encoding='utf-8') as file:
