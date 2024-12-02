@@ -10,28 +10,6 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 st.title("Data Maturity Detective")
 st.write("Welcome to the Data Maturity Detective! Ready to assess your company's maturity in data management? I'm going to ask you a series of questions to understand your practices and capabilities. Simply answer each question, and at the end, I'll provide you with a detailed diagnosis along with advice to improve your data maturity. To begin, type 'Ready' or ask me your first question.")
 
-
-# Function to render chat messages with custom icons
-def render_message(content, sender="assistant"):
-    if sender == "user":
-        icon = "USER.png"
-        alignment = "flex-end"
-    else:
-        icon = "CM_image.png"
-        alignment = "flex-start"
-
-    st.markdown(
-        f"""
-        <div style="display: flex; align-items: center; justify-content: {alignment}; margin: 10px 0;">
-            <img src="{icon}" width="40" style="border-radius: 50%; margin: 0 10px;" />
-            <div style="background-color: #f1f1f1; padding: 10px 15px; border-radius: 10px; max-width: 70%; text-align: left;">
-                {content}
-            </div>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-
 # Lecture du contenu du fichier texte directement depuis le fichier
 with open('instructions.txt', 'r', encoding='utf-8') as file:
     file_content = file.read()
@@ -48,18 +26,18 @@ if "messages" not in st.session_state:
 
 # Afficher uniquement les messages utilisateur et assistant, en ignorant les deux premiers
 for message in st.session_state.messages[2:]:
-    with st.chat_message(message["role"]):
+    with st.chat_message(message["role"], avatar="🤖"):
         st.markdown(message["content"])
 
 # Saisie et gestion de l'entrée utilisateur
 if prompt := st.chat_input("Votre texte ici"):
     # Ajouter le message de l'utilisateur à la liste des messages
     st.session_state.messages.append({"role": "user", "content": prompt})
-    with st.chat_message("user"):
+    with st.chat_message("user", avatar="🦖"):
         st.markdown(prompt)
 
     # Envoi de la requête à OpenAI avec le contenu du fichier et les messages
-    with st.chat_message("assistant"):
+    with st.chat_message("assistant", avatar="🤖"):
         message_placeholder = st.empty()
         full_response = ""
         try:
