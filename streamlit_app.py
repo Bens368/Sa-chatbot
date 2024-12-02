@@ -10,6 +10,28 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 st.title("Data Maturity Detective")
 st.write("Welcome to the Data Maturity Detective! Ready to assess your company's maturity in data management? I'm going to ask you a series of questions to understand your practices and capabilities. Simply answer each question, and at the end, I'll provide you with a detailed diagnosis along with advice to improve your data maturity. To begin, type 'Ready' or ask me your first question.")
 
+
+# Function to render chat messages with custom icons
+def render_message(content, sender="assistant"):
+    if sender == "user":
+        icon = "path/to/user_image.png"  # Replace with your user image path
+        alignment = "flex-end"
+    else:
+        icon = "path/to/assistant_image.png"  # Replace with your assistant image path
+        alignment = "flex-start"
+
+    st.markdown(
+        f"""
+        <div style="display: flex; align-items: center; justify-content: {alignment}; margin: 10px 0;">
+            <img src="{icon}" width="40" style="border-radius: 50%; margin: 0 10px;" />
+            <div style="background-color: #f1f1f1; padding: 10px 15px; border-radius: 10px; max-width: 70%; text-align: left;">
+                {content}
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
 # Lecture du contenu du fichier texte directement depuis le fichier
 with open('instructions.txt', 'r', encoding='utf-8') as file:
     file_content = file.read()
