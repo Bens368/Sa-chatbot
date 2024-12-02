@@ -14,10 +14,10 @@ st.write("Welcome to the Data Maturity Detective! Ready to assess your company's
 # Function to render chat messages with custom icons
 def render_message(content, sender="assistant"):
     if sender == "user":
-        icon = "path/to/user_image.png"  # Replace with your user image path
+        icon = "USER.png"
         alignment = "flex-end"
     else:
-        icon = "path/to/assistant_image.png"  # Replace with your assistant image path
+        icon = "CM_image.png"
         alignment = "flex-start"
 
     st.markdown(
