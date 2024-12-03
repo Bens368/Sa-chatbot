@@ -1,8 +1,10 @@
 import openai
 import streamlit as st
 import os
+from dotenv import load_dotenv
 
 # Charger les variables d'environnement
+load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 st.title("Data Maturity Detective")
