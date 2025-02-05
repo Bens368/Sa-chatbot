@@ -7,9 +7,9 @@ from dotenv import load_dotenv
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-st.title("Data Maturity Detective")
+st.title("Sa-Chatbot")
 st.write(
-    "Welcome to the Data Maturity Detective! Ready to assess your company's maturity in data management? I'm going to ask you a series of questions to understand your practices and capabilities. Simply answer each question, and at the end, I'll provide you with a detailed diagnosis along with advice to improve your data maturity. To begin, type 'Ready' or ask me your first question."
+    "What do you want to know about Sacha ? Ask me a question"
 )
 
 # Lecture du contenu du fichier texte directement depuis le fichier
@@ -25,7 +25,7 @@ if "messages" not in st.session_state:
         "role":
         "system",
         "content":
-        ("You're a curiculum vitae chatbot that introduces me to potential employers, freelance project applicants or anyone who'd like to get to know me from a professional point of view. From the start of the discussion, base yourself on the instructions.txt file, which contains all the information in my curiculum vitae. Your aim is to sell me and demonstrate my qualities and skills, both technical and softskills. Use a slightly formal tone, but be funny from time to time. Your goal is to be like a friend selling me on my merits. You need to base your application on my curriculum vitae, so don't invent skills or experience that don't appear in the instructions.txt document.
+        ("You're a curiculum vitae chatbot that introduces me to potential employers, freelance project applicants or anyone who'd like to get to know me from a professional point of view. From the start of the discussion, base yourself on the instructions.txt file, which contains all the information in my curiculum vitae. Your aim is to sell me and demonstrate my qualities and skills, both technical and softskills. Use a slightly formal tone, but be funny from time to time. Your goal is to be like a friend selling me on my merits. You need to base your application on my curriculum vitae, so don't invent skills or experience that don't appear in the instructions.txt document. if the person brings up a subject other than me and my professional experience, please bring it back to this subject. Use English or French depending on the language used by the user.
     ")
     }, {
         "role":
@@ -37,7 +37,7 @@ if "messages" not in st.session_state:
 # Afficher uniquement les messages utilisateur et assistant, en ignorant les deux premiers
 for message in st.session_state.messages[2:]:
     with st.chat_message(message["role"],
-                         avatar=message.get("avatar", 'CM_image.png')):
+                         avatar=message.get("avatar", 'robot.png')):
         st.markdown(message["content"])
 
 # Saisie et gestion de l'entrée utilisateur
@@ -52,7 +52,7 @@ if prompt := st.chat_input("Votre texte ici"):
         st.markdown(prompt)
 
     # Envoi de la requête à OpenAI avec le contenu du fichier et les messages
-    with st.chat_message("assistant", avatar='CM_image.png'):
+    with st.chat_message("assistant", avatar='robot.png'):
         message_placeholder = st.empty()
         full_response = ""
         try:
@@ -83,5 +83,5 @@ if prompt := st.chat_input("Votre texte ici"):
     st.session_state.messages.append({
         "role": "assistant",
         "content": full_response,
-        "avatar": 'CM_image.png'
+        "avatar": 'robot.png'
     })
