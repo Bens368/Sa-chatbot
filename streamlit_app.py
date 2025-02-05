@@ -9,7 +9,7 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 
 st.title("Sa-Chatbot")
 st.write(
-    "What do you want to know about Sacha ? Ask me a question"
+    "hello, I'm a chatbot here to introduce Sacha, a data scientist and machine learning teacher. I'll let you ask me any questions you like about it, in English or French, whichever you prefer !"
 )
 
 # Lecture du contenu du fichier texte directement depuis le fichier
