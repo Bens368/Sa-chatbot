@@ -1,0 +1,89 @@
+import openai
+import streamlit as st
+import os
+import chromadb
+from dotenv import load_dotenv
+from chromadb.utils import embedding_functions
+
+# Charger les variables d'environnement
+load_dotenv()
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
+# Initialiser ChromaDB
+chroma_client = chromadb.PersistentClient(path="./chroma_db")
+
+# Définir la fonction d'embedding avec OpenAI
+openai_ef = embedding_functions.OpenAIEmbeddingFunction(api_key=openai.api_key)
+
+# Charger ou créer une collection
+collection = chroma_client.get_or_create_collection(name="cv_data", embedding_function=openai_ef)
+
+# Charger et indexer le fichier instructions.txt si non indexé
+if not collection.count():
+    with open('instructions.txt', 'r', encoding='utf-8') as file:
+        content = file.read()
+
+    # Découper en petits morceaux (chunks)
+    chunks = content.split("\n\n")  # Diviser en paragraphes (peut être ajusté)
+    
+    for i, chunk in enumerate(chunks):
+        collection.add(ids=[str(i)], documents=[chunk])
+
+# Fonction pour récupérer les informations pertinentes
+def retrieve_relevant_info(query):
+    results = collection.query(query_texts=[query], n_results=3)  # Récupérer 3 meilleurs résultats
+    return " ".join(results["documents"][0]) if results["documents"] else "Je n'ai pas trouvé d'information pertinente."
+
+# Interface Streamlit
+st.title("Sa-Chatbot")
+st.write(
+    "Hello, I'm a chatbot developed by Sacha, a data scientist and machine learning teacher. "
+    "I can introduce you to my skills and experience based on my CV!"
+)
+
+# Initialiser l'état si nécessaire
+if "messages" not in st.session_state:
+    st.session_state.messages = [{"role": "system", "content": "Tu es un chatbot qui présente mon CV."}]
+
+# Afficher les messages précédents
+for message in st.session_state.messages[1:]:
+    with st.chat_message(message["role"]):
+        st.markdown(message["content"])
+
+# Entrée utilisateur
+if prompt := st.chat_input("Pose-moi une question sur mon parcours !"):
+    st.session_state.messages.append({"role": "user", "content": prompt})
+
+    with st.chat_message("user"):
+        st.markdown(prompt)
+
+    # Récupérer l'information pertinente
+    relevant_info = retrieve_relevant_info(prompt)
+
+    # Générer une réponse avec OpenAI
+    with st.chat_message("assistant"):
+        message_placeholder = st.empty()
+        full_response = ""
+
+        try:
+            response = openai.ChatCompletion.create(
+                model="gpt-3.5-turbo",
+                messages=[
+                    {"role": "system", "content": "Tu es un chatbot qui présente mon CV."},
+                    {"role": "user", "content": f"{prompt}\n\nInformations du CV : {relevant_info}"}
+                ],
+                stream=True,
+            )
+
+            for chunk in response:
+                content = chunk.choices[0].delta.get("content", "")
+                full_response += content
+                message_placeholder.markdown(full_response + "▌")  # Effet de dactylographie
+
+            message_placeholder.markdown(full_response)  # Réponse finale
+
+        except Exception as e:
+            st.error(f"Une erreur est survenue : {e}")
+
+    # Ajouter la réponse de l'IA à l'historique
+    st.session_state.messages.append({"role": "assistant", "content": full_response})
